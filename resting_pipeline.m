@@ -4,6 +4,7 @@ function [EEGfinal] = resting_pipeline(current_dir,datafile)
 % Requirements:
 %   EEGLab must be in your path. 
 %   The MARA ICA artifact removal plugin must be installed and in the path.
+%   The cleanline plugin must be installed
 %
 % Inputs:
 %   current_dir = directory of files to load (string)
@@ -18,7 +19,7 @@ function [EEGfinal] = resting_pipeline(current_dir,datafile)
 % MARA: https://irenne.github.io/artifacts/, Irene Winkler, Stefan Haufe and Michael Tangermann. Automatic Classification of Artifactual ICA-Components for Artifact Removal in EEG Signals. Behavioral and Brain Functions, 7:30, 2011. 
 %   Irene Winkler, Stephanie Brandl, Franziska Horn, Eric Waldburger, Carsten Allefeld and Michael Tangermann. Robust artifactual independent component classification for BCI practitioners. Journal of Neural Engineering, 11 035013, 2014. 
 % faster: Nolan, H., Whelan, R.,&  Reilly, R.B. (2010). FASTER: Fully Automated Statistical Thresholding for EEG artifact Rejection./Journal of Neuroscience Methods, 192/, 152-162.
-
+% cleanline: https://github.com/sccn/cleanline, 
 
 
 %% step 1, load data using appropriate routine for file extension
